@@ -1,8 +1,7 @@
-const jsonplaceholder_url = "https://jsonplaceholder.typicode.com";
 const row = document.getElementById("row");
 
 async function getUsers() {
-  const res = await fetch(jsonplaceholder_url + "/users");
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
   console.log(data);
   for (user of data) {
