@@ -5,7 +5,7 @@ async function userPrompt(){
   try {
     let userId = parseInt(userInput);
     if (userId <= 0 || userId > 10 || isNaN(userId) ) {
-      throw new Error('Geçersiz userId. Lütfen 1 ile 10 arasında bir sayı girin.');
+      throw new Error('Geçersiz Kullanıcı ID. Lütfen 1 ile 10 arasında bir sayı girin.');
 
   }
   
